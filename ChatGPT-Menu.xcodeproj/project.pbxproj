@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A2E051DA29B6A18800DFDC30 /* ChatGPT_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051D929B6A18800DFDC30 /* ChatGPT_MenuApp.swift */; };
-		A2E051DC29B6A18800DFDC30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051DB29B6A18800DFDC30 /* ContentView.swift */; };
 		A2E051DE29B6A18900DFDC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E051DD29B6A18900DFDC30 /* Assets.xcassets */; };
 		A2E051E129B6A18900DFDC30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E051E029B6A18900DFDC30 /* Preview Assets.xcassets */; };
+		A2E051EB29B7BAAC00DFDC30 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = A2E051EA29B7BAAC00DFDC30 /* KeyboardShortcuts */; };
+		A2E051ED29B99E0F00DFDC30 /* scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = A2E051EC29B99E0F00DFDC30 /* scripts.js */; };
+		A2E051EF29B99E2400DFDC30 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = A2E051EE29B99E2400DFDC30 /* styles.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2E051D629B6A18800DFDC30 /* ChatGPT-Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT-Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E051D629B6A18800DFDC30 /* ChatGPT for Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT for Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E051D929B6A18800DFDC30 /* ChatGPT_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_MenuApp.swift; sourceTree = "<group>"; };
-		A2E051DB29B6A18800DFDC30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2E051DD29B6A18900DFDC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E051E029B6A18900DFDC30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2E051E229B6A18900DFDC30 /* ChatGPT_Menu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPT_Menu.entitlements; sourceTree = "<group>"; };
+		A2E051EC29B99E0F00DFDC30 /* scripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = scripts.js; sourceTree = "<group>"; };
+		A2E051EE29B99E2400DFDC30 /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E051EB29B7BAAC00DFDC30 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +48,7 @@
 		A2E051D729B6A18800DFDC30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2E051D629B6A18800DFDC30 /* ChatGPT-Menu.app */,
+				A2E051D629B6A18800DFDC30 /* ChatGPT for Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				A2E051D929B6A18800DFDC30 /* ChatGPT_MenuApp.swift */,
-				A2E051DB29B6A18800DFDC30 /* ContentView.swift */,
 				A2E051DD29B6A18900DFDC30 /* Assets.xcassets */,
 				A2E051E229B6A18900DFDC30 /* ChatGPT_Menu.entitlements */,
+				A2E051EC29B99E0F00DFDC30 /* scripts.js */,
+				A2E051EE29B99E2400DFDC30 /* styles.css */,
 				A2E051DF29B6A18900DFDC30 /* Preview Content */,
 			);
 			path = "ChatGPT-Menu";
@@ -72,9 +77,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2E051D529B6A18800DFDC30 /* ChatGPT-Menu */ = {
+		A2E051D529B6A18800DFDC30 /* ChatGPT for Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2E051E529B6A18900DFDC30 /* Build configuration list for PBXNativeTarget "ChatGPT-Menu" */;
+			buildConfigurationList = A2E051E529B6A18900DFDC30 /* Build configuration list for PBXNativeTarget "ChatGPT for Mac" */;
 			buildPhases = (
 				A2E051D229B6A18800DFDC30 /* Sources */,
 				A2E051D329B6A18800DFDC30 /* Frameworks */,
@@ -84,9 +89,12 @@
 			);
 			dependencies = (
 			);
-			name = "ChatGPT-Menu";
+			name = "ChatGPT for Mac";
+			packageProductDependencies = (
+				A2E051EA29B7BAAC00DFDC30 /* KeyboardShortcuts */,
+			);
 			productName = "ChatGPT-Menu";
-			productReference = A2E051D629B6A18800DFDC30 /* ChatGPT-Menu.app */;
+			productReference = A2E051D629B6A18800DFDC30 /* ChatGPT for Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,11 +121,14 @@
 				Base,
 			);
 			mainGroup = A2E051CD29B6A18800DFDC30;
+			packageReferences = (
+				A2E051E929B7BAAC00DFDC30 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			productRefGroup = A2E051D729B6A18800DFDC30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2E051D529B6A18800DFDC30 /* ChatGPT-Menu */,
+				A2E051D529B6A18800DFDC30 /* ChatGPT for Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E051E129B6A18900DFDC30 /* Preview Assets.xcassets in Resources */,
+				A2E051EF29B99E2400DFDC30 /* styles.css in Resources */,
 				A2E051DE29B6A18900DFDC30 /* Assets.xcassets in Resources */,
+				A2E051ED29B99E0F00DFDC30 /* scripts.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E051DC29B6A18800DFDC30 /* ContentView.swift in Sources */,
 				A2E051DA29B6A18800DFDC30 /* ChatGPT_MenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ChatGPT-Menu/ChatGPT_Menu.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -274,6 +287,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ChatGPT-Menu/ChatGPT_Menu.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -301,6 +317,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2E051E529B6A18900DFDC30 /* Build configuration list for PBXNativeTarget "ChatGPT-Menu" */ = {
+		A2E051E529B6A18900DFDC30 /* Build configuration list for PBXNativeTarget "ChatGPT for Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2E051E629B6A18900DFDC30 /* Debug */,
@@ -336,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2E051E929B7BAAC00DFDC30 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2E051EA29B7BAAC00DFDC30 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2E051E929B7BAAC00DFDC30 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2E051CE29B6A18800DFDC30 /* Project object */;
 }

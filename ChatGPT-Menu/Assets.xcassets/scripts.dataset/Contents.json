@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "scripts.js",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,4 @@
+*.dmg
+*.app
+**/xcuserdata/*
+**/xcshareddata/*

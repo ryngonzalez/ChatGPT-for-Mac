@@ -13,6 +13,14 @@
 		A2E051EB29B7BAAC00DFDC30 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = A2E051EA29B7BAAC00DFDC30 /* KeyboardShortcuts */; };
 		A2E051ED29B99E0F00DFDC30 /* scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = A2E051EC29B99E0F00DFDC30 /* scripts.js */; };
 		A2E051EF29B99E2400DFDC30 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = A2E051EE29B99E2400DFDC30 /* styles.css */; };
+		A2E051F229BC56B100DFDC30 /* KeyboardShortcuts+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051F129BC56B100DFDC30 /* KeyboardShortcuts+Extensions.swift */; };
+		A2E051F529BC56DC00DFDC30 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051F429BC56DC00DFDC30 /* MenuView.swift */; };
+		A2E051F729BC56F900DFDC30 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051F629BC56F900DFDC30 /* SettingsScreen.swift */; };
+		A2E051F929BC572E00DFDC30 /* VisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051F829BC572E00DFDC30 /* VisualEffect.swift */; };
+		A2E051FB29BC574400DFDC30 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051FA29BC574400DFDC30 /* WebView.swift */; };
+		A2E051FE29BC57C900DFDC30 /* PageZoomLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051FD29BC57C900DFDC30 /* PageZoomLevel.swift */; };
+		A2E0520029BC57EE00DFDC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E051FF29BC57EE00DFDC30 /* AppDelegate.swift */; };
+		A2E0520229BC582A00DFDC30 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E0520129BC582A00DFDC30 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,15 @@
 		A2E051E229B6A18900DFDC30 /* ChatGPT_Menu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPT_Menu.entitlements; sourceTree = "<group>"; };
 		A2E051EC29B99E0F00DFDC30 /* scripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = scripts.js; sourceTree = "<group>"; };
 		A2E051EE29B99E2400DFDC30 /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		A2E051F129BC56B100DFDC30 /* KeyboardShortcuts+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardShortcuts+Extensions.swift"; sourceTree = "<group>"; };
+		A2E051F429BC56DC00DFDC30 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A2E051F629BC56F900DFDC30 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		A2E051F829BC572E00DFDC30 /* VisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffect.swift; sourceTree = "<group>"; };
+		A2E051FA29BC574400DFDC30 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A2E051FD29BC57C900DFDC30 /* PageZoomLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageZoomLevel.swift; sourceTree = "<group>"; };
+		A2E051FF29BC57EE00DFDC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2E0520129BC582A00DFDC30 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A2E0520329BC586600DFDC30 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +73,16 @@
 		A2E051D829B6A18800DFDC30 /* ChatGPT-Menu */ = {
 			isa = PBXGroup;
 			children = (
+				A2E051FC29BC57B800DFDC30 /* Models */,
+				A2E051F329BC56C900DFDC30 /* Views */,
+				A2E051F029BC568F00DFDC30 /* Extensions */,
 				A2E051D929B6A18800DFDC30 /* ChatGPT_MenuApp.swift */,
+				A2E051FF29BC57EE00DFDC30 /* AppDelegate.swift */,
 				A2E051DD29B6A18900DFDC30 /* Assets.xcassets */,
 				A2E051E229B6A18900DFDC30 /* ChatGPT_Menu.entitlements */,
 				A2E051EC29B99E0F00DFDC30 /* scripts.js */,
 				A2E051EE29B99E2400DFDC30 /* styles.css */,
+				A2E0520329BC586600DFDC30 /* README.md */,
 				A2E051DF29B6A18900DFDC30 /* Preview Content */,
 			);
 			path = "ChatGPT-Menu";
@@ -72,6 +94,34 @@
 				A2E051E029B6A18900DFDC30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2E051F029BC568F00DFDC30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2E051F129BC56B100DFDC30 /* KeyboardShortcuts+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2E051F329BC56C900DFDC30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2E051F429BC56DC00DFDC30 /* MenuView.swift */,
+				A2E051F629BC56F900DFDC30 /* SettingsScreen.swift */,
+				A2E051F829BC572E00DFDC30 /* VisualEffect.swift */,
+				A2E051FA29BC574400DFDC30 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2E051FC29BC57B800DFDC30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2E051FD29BC57C900DFDC30 /* PageZoomLevel.swift */,
+				A2E0520129BC582A00DFDC30 /* AppState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E0520029BC57EE00DFDC30 /* AppDelegate.swift in Sources */,
+				A2E051F729BC56F900DFDC30 /* SettingsScreen.swift in Sources */,
+				A2E051F229BC56B100DFDC30 /* KeyboardShortcuts+Extensions.swift in Sources */,
+				A2E0520229BC582A00DFDC30 /* AppState.swift in Sources */,
+				A2E051F929BC572E00DFDC30 /* VisualEffect.swift in Sources */,
+				A2E051FB29BC574400DFDC30 /* WebView.swift in Sources */,
+				A2E051F529BC56DC00DFDC30 /* MenuView.swift in Sources */,
+				A2E051FE29BC57C900DFDC30 /* PageZoomLevel.swift in Sources */,
 				A2E051DA29B6A18800DFDC30 /* ChatGPT_MenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

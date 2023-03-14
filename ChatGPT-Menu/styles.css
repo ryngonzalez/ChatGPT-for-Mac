@@ -26,6 +26,7 @@
     
     .markdown.prose {
         --tw-prose-code: black !important;
+        --tw-prose-links: black !important;
     }
     
     .markdown th {
@@ -136,7 +137,7 @@ svg[viewBox="0 0 41 41"] > * {
     display: none;
 }
 
-div:has(svg[viewBox="0 0 41 41"]):not(.flex) + :not(.prose) {
+div:has(svg[viewBox="0 0 41 41"]):not(.flex) + .mb-2.text-center:not(.prose) {
     font-size: 32px;
     font-weight: bold;
 }
@@ -176,11 +177,11 @@ a[transition-colors] {
 }
 
 .CMgTXc {
-    background: var(--chatgpt-mac-foreground-color) !important;
+    background: white !important;
 }
 
 body.cb {
-    background: var(--chatgpt-mac-foreground-color);
+    background: white;
 }
 
 textarea {

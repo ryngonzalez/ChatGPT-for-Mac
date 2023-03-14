@@ -1,10 +1,8 @@
-//document.documentElement.className = "dark";
-//document.documentElement.style = "color-scheme: dark; overflow: hidden;";
-//
-
-function activateDarkMode() {
-  console.log("mode changing!")
-}
-const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
-darkModePreference.addEventListener("change", e => e.matches && activateDarkMode());
-
+document.addEventListener("keydown", e => {
+    if (window.location.href.includes("https://chat.openai.com/chat") && e.code == "Enter" && e.target.tagName == "TEXTAREA") {
+        if (e.target.nextSibling.tagName == "BUTTON" && e.shiftKey == false) {
+            e.preventDefault()
+            e.target.nextSibling.click()
+        }
+    }
+})

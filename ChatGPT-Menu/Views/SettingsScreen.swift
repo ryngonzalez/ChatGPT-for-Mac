@@ -16,7 +16,8 @@ struct SettingsScreen: View {
                 VStack(alignment: .center, spacing: 32) {
                     VStack(alignment: .center) {
                         Image("SettingsIcon", bundle: .main)
-                            .frame(width: 128, height: 128)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 128, maxHeight: 128)
                         Text("ChatGPT for Mac")
                             .font(.system(.largeTitle, design: .rounded))
                             .bold()

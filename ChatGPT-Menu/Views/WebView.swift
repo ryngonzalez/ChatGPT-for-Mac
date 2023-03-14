@@ -8,15 +8,30 @@
 import SwiftUI
 import WebKit
 
+class WebViewDelegate: NSObject, WKNavigationDelegate, WKUIDelegate {
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let frame = navigationAction.targetFrame,
+            frame.isMainFrame {
+            webView.load(navigationAction.request)
+            return nil
+        }
+        NSWorkspace.shared.open(navigationAction.request.url!)
+        return nil
+    }
+}
+
 struct WebView: NSViewRepresentable {
     var url: URL
     @Binding var pageZoomLevel: PageZoomLevel
+    let webViewDelegate = WebViewDelegate()
  
     func makeNSView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.setValue(false, forKey: "drawsBackground")
         
         let webView = WKWebView(frame: .zero, configuration: configuration)
+        webView.navigationDelegate = webViewDelegate
+        webView.uiDelegate = webViewDelegate
         DispatchQueue.main.async {
             let request = URLRequest(url: url)
             webView.load(request)

@@ -9,7 +9,7 @@ import SwiftUI
 import KeyboardShortcuts
 
 final class AppState: ObservableObject {
-    @Published var showWindow: Bool = false
+    @Published var showWindow: Bool = true
     @Published var showPreferences: Bool = false
     @Published var pageZoomLevel: PageZoomLevel = .default
     

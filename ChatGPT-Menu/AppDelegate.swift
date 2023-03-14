@@ -46,7 +46,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
                     self.togglePopover(nil)
                 })
         ])
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.togglePopover(self)
+        }
     }
 
     func togglePopover(_ sender: AnyObject?) {

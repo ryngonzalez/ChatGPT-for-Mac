@@ -12,7 +12,6 @@ import Combine
 
 @main
 struct ChatGPT_MenuApp: App {
-    @Environment(\.openWindow) var openWindow
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {

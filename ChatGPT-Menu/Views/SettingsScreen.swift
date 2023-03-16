@@ -16,8 +16,22 @@ struct SettingsScreen: View {
                 VStack(alignment: .center, spacing: 32) {
                     VStack(alignment: .center) {
                         Image("SettingsIcon", bundle: .main)
+                            .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(maxWidth: 128, maxHeight: 128)
+                            .background(
+                                Color(red: 0.996, green: 0.176, blue: 0.494)
+                                    .offset(x: 24, y: 24)
+                                    .blur(radius: 60)
+                                    .opacity(0.5)
+                            )
+                            .background(
+                                Color(red: 0.808, green: 0.416, blue: 1)
+                                    .offset(x: -12, y: -20)
+                                    .blur(radius: 40)
+                                    .opacity(0.5)
+                            )
+                            
                         Text("ChatGPT for Mac")
                             .font(.system(.largeTitle, design: .rounded))
                             .bold()
@@ -44,6 +58,8 @@ struct SettingsScreen: View {
             .padding(.top, 24)
             .frame(minWidth: 480, minHeight: 480)
         }
+        .background(Color.clear)
+        .background(VisualEffect().ignoresSafeArea())
     }
 }
 

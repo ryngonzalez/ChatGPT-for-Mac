@@ -18,12 +18,6 @@ struct ChatGPT_MenuApp: App {
         Settings {
             SettingsScreen()
                 .environmentObject(appDelegate.appState)
-                .keyboardShortcut(",", modifiers: .command)
-                .background(VisualEffect().ignoresSafeArea())
-        }
-        .windowStyle(.hiddenTitleBar)
-        .onChange(of: appDelegate.appState.showWindow) { value in
-            appDelegate.togglePopover(nil)
         }
     }
 }

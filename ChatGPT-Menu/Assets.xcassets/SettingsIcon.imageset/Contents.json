@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "mac1024.png",
+      "filename" : "mac256.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "mac256.png",
+      "filename" : "mac512.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "mac512.png",
+      "filename" : "mac1024.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -19,5 +19,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }

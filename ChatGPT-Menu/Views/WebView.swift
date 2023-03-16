@@ -52,7 +52,7 @@ struct WebView: NSViewRepresentable {
         do {
             return try String(contentsOfFile: path, encoding: .utf8)
         } catch {
-            return "Unkown Error"
+            return "Unknown Error"
         }
     }
     

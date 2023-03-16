@@ -16,8 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
     var hostingController: NSHostingController<AnyView>?
     var cancellables: [AnyCancellable] = []
     
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
+    func applicationDidFinishLaunching(_ aNotification: Notification) {        
         // Create the status bar item
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         statusItem.button?.image = NSImage(systemSymbolName: "message.and.waveform.fill", accessibilityDescription: "Button")
